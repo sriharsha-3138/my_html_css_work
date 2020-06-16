@@ -1,0 +1,196 @@
+<!-- Save this in a html file and run it will work--> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRu6mCYCUWB3R5YrQpY7KeuVAQk87i1oGdJ8aRn2L3NUXbgwYcf&usqp=CAU");
+  background-size: cover;
+}
+.column {
+  float: left;
+  width: 16%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: inline;;
+    margin-bottom: 10px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  .addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+}
+.icon-bar {
+  width: 100%; /* Full-width */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 5%; /* Equal width (5 icons with 20% width each = 100%) */
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 19px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: rgb(197, 149, 149); /* Add a hover color */
+}
+
+.active {
+  background-color: #4CAF50; /* Add an active/current color */
+}
+
+
+
+
+.block {
+  display: inline;
+  width: 6%;
+  border: darkgrey;
+  background-color:wheat;
+  padding: 14px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+#harsha{
+    text-align: center;
+    color:skyblue;
+    font-size: larger;
+    font-weight: bold;
+}
+.button {
+  background-color:whitesmoke;
+  border: none;
+  color: white;
+  padding: 18px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {font-size: 200px;}
+
+</style>
+</head>
+
+
+
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <span class="icon-bar">
+      <a class="active" href="#"><i class="fa fa-home"></i></a>
+      <button type="button" class="block">Boards</button>
+     
+
+    </span>
+    <button class="button"></button>
+<p id="harsha">Tralala
+  
+</p>
+<p id="harsha">
+    Frontend Training
+</p>
+
+
+
+
+
+
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>To Do </h3>
+      <p>Learn Html</p>
+      <p>Learn CSS</p>
+      <p>Learn Javascript</p>
+      <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+      <span onclick="newElement()" class="addBtn">Add</span>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Doing</h3>
+      <p>Prepare Resume</p>
+      <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+      <p></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Testing/verifying</h3>
+      <p>Twitter app frontend</p>
+      <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Deploying </h3>
+      <p>Twitter app backend</p>
+      <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Done</h3>
+      <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <p>  <input type="text" id="myInput" placeholder="+ADD an another card"></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
